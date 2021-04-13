@@ -1,0 +1,61 @@
+.work_interface{
+    padding: 70px 250px;
+    background-color: rgb(241, 239, 224);
+}
+   
+.work_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+}
+
+.work_line{
+    margin-top: 15px;
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+}
+
+.interface{
+    display: flex;
+    margin-top: 20px;
+}
+
+.interface_description{
+    margin-right: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+.interface_description li:not(:first-child){
+    margin-top: 20px;
+}
+
+.get_started_btn{
+    padding: 10px 10px;
+    border: none;
+    background: rgb(2, 27, 12);
+    border-radius: 5px;
+    
+}
+
+.get_started{
+    color: rgb(255, 255, 255);
+}
+
+.interface_example{
+    width: 900px;
+}

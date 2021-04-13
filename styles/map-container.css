@@ -1,0 +1,10 @@
+.map__holder{
+  width: calc(100vw - 5rem);
+  height: 100vh;
+  z-index: 1;
+  /* transition: all 1s ease-in-out; */
+}
+
+#map{
+  height: 100%;
+}

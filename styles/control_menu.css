@@ -1,0 +1,33 @@
+.control__menu{
+  position: relative;
+  background: #25272A;
+  /* mix-blend-mode: normal; */
+  opacity: 0.75;
+  width: 25rem;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+}
+
+.control__menu-closed {
+  width: 0
+}
+
+
+.tab__window{
+  height: calc(100% - 35px);
+  width: 25rem;
+}
+
+.tab__name{
+  height: 3.5rem;
+  display: flex;
+}
+
+.tab__name-text{
+  margin-top: 0.2rem;
+  font-size: 2rem;
+  color: white;
+  user-select: none;
+  cursor: inherit;
+  margin: auto;
+}

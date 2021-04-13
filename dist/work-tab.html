@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/favicon/favicon.png">
+  <link rel="stylesheet" href="../styles/work-tab__body.css">
+  <link rel="stylesheet" href="../styles/map-container.css">
+  <link rel="stylesheet" href="../styles/navigation-list.css">
+  <link rel="stylesheet" href="../styles/burger.css">
+  <link rel="stylesheet" href="../styles/control_menu.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <title>Soil application</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="side__bar">
+      <div class="navigation__list">
+        <div class="burger">
+          <svg class="burger__svg" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="full__menu">
+              <rect class="line" x="10" y="10" width="80" height="10" fill="white"/>
+              <rect class="line" x="10" y="30" width="80" height="10" fill="white"/>
+              <rect class="line" x="10" y="50" width="80" height="10" fill="white"/>
+            </g>
+            <g class="small__menu fade">
+              <circle class="circle"cx="82.5" cy="34.5" r="7.5" fill="white"/>
+              <circle class="circle"cx="49.5" cy="34.5" r="7.5" fill="white"/>
+              <circle class="circle"cx="17.5" cy="34.5" r="7.5" fill="white"/>
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Поля</span>
+          </li>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Заметки</span>
+          </li>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Посев</span>
+          </li>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Удобрения</span>
+          </li>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Погода</span>
+          </li>
+          <li class="navigation__item">
+            <img src="../assets/favicon/favicon.png" alt="icon" class="icon">
+            <span class="nav__text">Данные</span>
+        </li>
+        <li class="navigation__item">
+          
+          <span class="nav__text"><a class="nav__text" href="../index.html">На главную</a></span>
+        </li>
+        </ul>
+      </div>
+      <div class="control__menu control__menu-closed">
+        <div class="tab__name">
+          <span class="tab__name-text">Current tab</span>
+        </div>
+        <div class="tab__window">
+
+        </div>
+      </div>
+    </div>
+    <div class="map__holder">
+      <div class="map" id="map"></div>
+    </div>
+  </div>
+  <script src="../script/map-script.js"></script>
+  <script src="../script/burger__toggle.js"></script>
+  <script src="../script/setTabName.js"></script>
+</body>
+</html>

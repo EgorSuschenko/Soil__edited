@@ -1,0 +1,108 @@
+.footer{
+    padding: 30px 250px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(2, 27, 12);
+    align-items: center;
+    
+}
+
+.footer_description h2{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.footer_description p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF; 
+}
+
+.footer_nav_elements{
+    display: flex;
+    align-items: center;
+}
+
+.footer_head_links{
+    margin-right: 30px;
+}
+
+.FAQ_block{
+    margin-right: 30px;
+}
+
+.partner_footer_block{
+    margin-right: 30px;
+}
+
+.contact_us_info{
+    margin-right: 30px;
+}
+
+.contact_us_info p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+
+}
+
+.footer_nav_elements h2{
+    font-family: "Open Sans";
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    
+}
+
+.links_container{
+    margin-top: 7px;
+}
+
+.footer_link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.footer_link:hover{
+    color: #e5d600;
+}
+
+.links_container li:not(:first-child){
+    margin-top: 4px;
+}
+
+.social_media_container{
+    display: flex;
+    align-items: center;
+}
+
+.social_media_container img{
+    width: 20px;
+    height: 20px;
+}
+
+.social_media_container li:not(:last-child){
+    margin-right: 20px;
+}

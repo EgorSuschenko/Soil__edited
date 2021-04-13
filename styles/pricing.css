@@ -1,0 +1,142 @@
+.pricing_panel {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    height: 900px;
+    background: #F5F5F5;
+}
+
+.pricing_panel_head {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 435px;
+    margin-bottom: 81px;
+    margin-top: 100px;
+}
+.pricing_panel_summary{
+    align-self: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;  
+    color: #212121;   
+}
+.pricing_text{
+    align-self: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878B;
+}
+
+.pricing_line {
+    align-self: center;
+    width: 64px;
+    height: 2px;
+    margin-bottom: 22px;
+    background: #FF8B38;
+}
+
+.pricing_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pricing_block{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 40px;
+    width: 343px;
+    height: 462px;
+}
+.pricing_block2{
+    width: 343px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px; 
+}
+
+.block_summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 59px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;  
+    background: #333333;
+    color: #FFFFFF;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 100px;
+    background: #333333;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-bottom:1px solid #FFFFFF; ;
+}
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 50px;
+    background: #333333;
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.foot_line{
+    width: 343px;
+    height: 5px;
+    background: #FF8B38;
+}
+.foot_line2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 40px;
+    background: #FF8B38;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff; 
+}
+.block_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 40px;
+    background-color: #fff;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #86878B;
+}

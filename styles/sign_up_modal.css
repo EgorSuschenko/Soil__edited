@@ -1,0 +1,91 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background: rgb(2, 27, 12);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+    height: 400px;
+  }
+
+  .modal_input{
+      padding: 10px 0;
+      margin-top: 40px;
+      width: 300px;
+      border: none;
+  }
+
+  .submit_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+  .submit{
+      background: rgb(0, 0, 0);
+      padding: 10px 0;
+      width: 200px;
+      border: none;
+      font-family: "Open Sans", serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: rgb(255, 255, 255)
+  }
+
+  .submit:hover{
+      cursor: pointer;
+      color: #e5d600;
+      transform: scale(1.02);
+  }
+
+  .submit:focus{
+      outline: none;
+  }
+
+  .registration{
+    font-family: "Open Sans", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .registration:hover{
+    color: #e5d600;
+  }
+
+  /* The Close Button */
+  .close {
+    text-align: right;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }

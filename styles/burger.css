@@ -1,0 +1,35 @@
+.burger{
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.burger__svg{
+  width: 35px;
+  height: 35px;
+  margin-left: 0.5rem
+}
+
+.line {
+  transition: all 1s ease;
+}
+
+#small__menu {
+  opacity: 0;
+}
+
+.fade {
+  opacity: 0
+}
+
+.line__1{
+  transform: translateY(-100%);
+}
+
+.line__2 {
+  opacity: 0;
+}
+
+.line__3 {
+  transform: translateY(100%);
+}
