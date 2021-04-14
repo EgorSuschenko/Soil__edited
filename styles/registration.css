@@ -1,5 +1,4 @@
-/* The Modal (background) */
-.modal {
+.reg_modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -125,7 +124,3 @@
   .registration_link:hover{
     color: #e5d600;
   }
-
-  
-  
-  
