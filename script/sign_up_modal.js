@@ -1,3 +1,7 @@
+const signForm = document.getElementById("input_container_sign")
+// const signBtn = document.getElementById("form_sign_submit")
+const regBtnForm = document.getElementById("form_reg_submit")
+
 const modalReg = document.getElementById("regModal");
 const btnReg = document.getElementById("registration");
 const spanReg = document.getElementsByClassName("close_btn")[0];
@@ -23,7 +27,6 @@ window.onclick = (event) => {
   }
 }
 
-
 btnReg.onclick = function() {
   modalReg.style.display = "block";
   modal.style.display = "none";
@@ -33,6 +36,14 @@ spanReg.onclick = function() {
   modalReg.style.display = "none";
   document.querySelector("body").style.overflow = "inherit"
 }
+function signFunc(e){
+  if (e.submitted)
+  document.location.href = "./dist/work-tab.html"
+}
+ 
+ regBtnForm.onsubmit = () =>{
+   document.location.href = "./dist/work-tab.html"
+ }
 
 //  window.onclick = (event) => {
 //   if (event.target == modalReg) {

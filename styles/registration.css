@@ -13,7 +13,7 @@
   
   /* Modal Content/Box */
   .reg_modal-content {
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 8% auto; /* 15% from the top and centered */
     width: 500px; /* Could be more or less, depending on screen size */
     height: 400px;
   }
@@ -65,7 +65,7 @@
 
   .close_container h2{
     text-align: center;
-    margin: auto 43%;
+    margin: auto 36%;
     font-family: "Open Sans", serif;
     font-style: normal;
     font-weight: 600;

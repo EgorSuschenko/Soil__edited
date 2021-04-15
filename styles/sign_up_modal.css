@@ -47,7 +47,7 @@
     padding: 15px 7px;
   }
 
-  .close_container{
+  .close_container_sign{
     display: flex;
   }
 
@@ -64,7 +64,7 @@
     cursor: pointer;
   }
 
-  .close_container h2{
+  .close_container_sign h2{
     text-align: center;
     margin: auto 43%;
     font-family: "Open Sans", serif;
