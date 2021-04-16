@@ -16,18 +16,72 @@
 .tab__window{
   height: calc(100% - 35px);
   width: 25rem;
+  color: white
 }
 
 .tab__name{
   height: 3.5rem;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.back__btn{
+  background:rgba(37, 39, 42, 0.75);
+  border: none;
+  color: white;
+  padding: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  border-radius: 0.5rem;
+  opacity: 1;
+}
+
+.back__btn:hover{
+  background: rgba(67, 97, 75, 0.75);
+}
+
+.back__btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.back__btn-closed{
+  opacity: 0;
+
 }
 
 .tab__name-text{
-  margin-top: 0.2rem;
+
   font-size: 2rem;
   color: white;
   user-select: none;
   cursor: inherit;
   margin: auto;
+}
+
+.input__notes {
+  width: 20rem;
+  height: 8rem;
+  font-size: 1.6rem;
+  margin: 1rem 0.5rem;
+}
+
+.add__note{
+  margin: 1rem 0.5rem;
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0rem 1rem;
+
+}
+
+.note__title{
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+
 }
