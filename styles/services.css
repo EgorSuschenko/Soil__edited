@@ -29,43 +29,43 @@
 
 .example_wrapper{
     margin-top: 15px;
-    display: flex; 
-    justify-content: space-between;  
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+
 }
 
 .gallery{
     overflow: hidden;
-    height: 350px;
+    width: 810px;
+    height: 370px;
 }
 
 .carousel{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-evenly;
 }
 
 .arrow{
   width: 25px;
-  height: 25px;  
+  height: 25px;
 }
 
 .prev {
     left: 7px;
   }
-  
-  .next {
+
+.next {
     right: 7px;
-  }
-.partner_block{
-    /* padding: 40px 25px; */
-    border: 1px solid rgb(236, 231, 231);
-    width: 270px;
-    height: 300px;
 }
 
 .partner_block{
-    margin-right: 0 30px;
+    padding: 40px 25px;
+    border: 1px solid rgb(236, 231, 231);
+    width: 270px;
+    height: 300px;
+    margin: 0 30px;
 }
 
 .partner_logo{
@@ -88,7 +88,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 23px;  
+    line-height: 23px;
     letter-spacing: 0.1875px;
-    color: #48555B; 
+    color: #48555B;
 }
