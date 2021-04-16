@@ -28,21 +28,26 @@
 }
 
 .example_wrapper{
-    overflow: hidden;
-    width: 650px;
-    height: 350px;
     margin-top: 15px;
     display: flex; 
-    justify-content: center;  
+    justify-content: space-between;  
+}
+
+.gallery{
+    overflow: hidden;
+    height: 350px;
 }
 
 .carousel{
     display: flex;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .arrow{
-    position: absolute;
+  width: 25px;
+  height: 25px;  
 }
 
 .prev {
@@ -53,14 +58,14 @@
     right: 7px;
   }
 .partner_block{
-    padding: 40px 25px;
+    /* padding: 40px 25px; */
     border: 1px solid rgb(236, 231, 231);
-    width: 300px;
+    width: 270px;
     height: 300px;
 }
 
-.partner_block:not(:last-child){
-    margin-right: 30px;
+.partner_block{
+    margin-right: 0 30px;
 }
 
 .partner_logo{

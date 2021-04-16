@@ -1,5 +1,5 @@
-let width = 300; // ширина картинки
-    let count = 1; // видимое количество изображений
+let width = 250; // ширина картинки
+    let count = 3; // видимое количество изображений
 
     let list = document.querySelector('.example_wrapper');
     let listElems = document.querySelectorAll('.partner_block');
