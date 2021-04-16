@@ -49,3 +49,9 @@ li.navigation__item{
   max-width: 40rem;
   display: flex
 }
+
+.back__link{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
