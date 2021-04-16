@@ -1,9 +1,8 @@
 .pricing_panel {
+    padding: 70px 250px;
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
-    height: 900px;
-    background: #F5F5F5;
+    background-color: rgb(241, 239, 224);
 }
 
 .pricing_panel_head {
@@ -11,80 +10,75 @@
     flex-direction: column;
     align-self: center;
     max-width: 435px;
-    margin-bottom: 81px;
-    margin-top: 100px;
 }
 .pricing_panel_summary{
     align-self: center;
-    font-family: Raleway;
+    font-family: "Open Sans";
     font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;  
-    color: #212121;   
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    color: #48555B;  
 }
 .pricing_text{
+    margin-top: 15px;
     align-self: center;
-    font-family: Raleway;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #86878B;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
 }
 
 .pricing_line {
     align-self: center;
+    margin-top: 15px;
     width: 64px;
     height: 2px;
-    margin-bottom: 22px;
     background: #FF8B38;
 }
 
 .pricing_content {
+    margin-top: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     
 }
 .pricing_block{
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
-    margin-right: 40px;
     width: 343px;
     height: 462px;
 }
-.pricing_block2{
-    width: 343px;
-    height: 497px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px; 
+
+.pricing_block:not(:last-child){
+    margin-right: 40px;
 }
 
 .block_summary{
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 343px;
-    height: 59px;
-    font-family: Raleway;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;  
-    background: #333333;
+    background: rgb(2, 27, 12);
     color: #FFFFFF;
 }
 .price{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 343px;
     height: 100px;
-    background: #333333;
-    font-family: Raleway;
+    background: rgb(2, 27, 12);
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -97,10 +91,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 343px;
     height: 50px;
-    background: #333333;
-    font-family: Raleway;
+    background: rgb(2, 27, 12);
+    font-family: "Open Sans";
     font-style: italic;
     font-weight: 600;
     font-size: 14px;
@@ -112,31 +105,21 @@
     height: 5px;
     background: #FF8B38;
 }
-.foot_line2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 343px;
-    height: 40px;
-    background: #FF8B38;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff; 
-}
+
 .block_text{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 343px;
     height: 40px;
     background-color: #fff;
-    font-family: Raleway;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: #86878B;
+}
+
+.block_text:not(:last-child){
+    border-bottom: 1px solid rgb(235, 232, 232);
 }
