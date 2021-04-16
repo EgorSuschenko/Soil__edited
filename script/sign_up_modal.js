@@ -1,5 +1,6 @@
+const corousel = document.querySelector("")
 const signForm = document.getElementById("input_container_sign")
-// const signBtn = document.getElementById("form_sign_submit")
+const regForm = document.getElementById("input_container_reg")
 const regBtnForm = document.getElementById("form_reg_submit")
 
 const modalReg = document.getElementById("regModal");
@@ -36,13 +37,14 @@ spanReg.onclick = function() {
   modalReg.style.display = "none";
   document.querySelector("body").style.overflow = "inherit"
 }
-function signFunc(e){
-  if (e.submitted)
+signForm.onsubmit = (event) =>{
+  event.preventDefault();
   document.location.href = "./dist/work-tab.html"
 }
  
- regBtnForm.onsubmit = () =>{
-   document.location.href = "./dist/work-tab.html"
+regForm.onsubmit = (event) =>{
+  event.preventDefault();
+  document.location.href = "./dist/work-tab.html"
  }
 
 //  window.onclick = (event) => {

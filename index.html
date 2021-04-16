@@ -64,8 +64,8 @@
                             <span class="close_btn">&times;</span>
                         </div>
                     </div>
-                    <form class="input_container">
-                        <input type="text" class="modal_input" placeholder="Введите Ваше Имя" required>
+                    <form class="input_container" id="input_container_reg">
+                        <input type="text" class="modal_input" placeholder="Введите Ваше Имя" required pattern="">
                         <input type="email" class="modal_input" placeholder="Введите email"  required>
                         <input type="password" class="modal_input" placeholder="Введите пароль"  required>
                         <input type="password" class="modal_input" placeholder="Повторите пароль"  required>
@@ -121,23 +121,48 @@
             <h3>Наши Партнеры</h3>
             <div class="example_line"></div>
         </div>
-        <div class="example_wrapper">
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
-            </div>
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus facilis itaque! Libero dignissimos hic nemo voluptas sit dolorem architecto.</p>
-            </div>
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores esse odit laboriosam similique ipsum quisquam officiis quidem, iusto provident suscipit!</p>
-            </div>
-        </div>
+        <div class="carousel">
+            <button class="arrow prev">⇦</button>
+            <ul class="example_wrapper">
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>
+                <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                    <h2>ВГУ</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                </li>  
+            </ul>
+            <button class="arrow next">⇨</button>
+        </div>  
     </section>
     <div id="pricing_panel" class="pricing_panel">
         <div class="pricing_panel_head">
@@ -149,9 +174,9 @@
         </div>
         <div class="pricing_content">
           <div class="pricing_block">
-            <div class="block_summary">Basic</div>
-            <div class="price">$0</div>
-            <div class="payment">Free for Life</div>
+            <div class="block_summary">Базовая</div>
+            <div class="price">10р.</div>
+            <div class="payment">В месяц</div>
             <div class="foot_line"></div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
@@ -159,11 +184,13 @@
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
           </div>
           <div class="pricing_block">
-            <div class="block_summary">Basic</div>
-            <div class="price">$19</div>
-            <div class="payment">Free for Life</div>
+            <div class="block_summary">Расширенная</div>
+            <div class="price">30р.</div>
+            <div class="payment">В месяц</div>
             <div class="foot_line"></div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
@@ -171,11 +198,13 @@
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
           </div>
           <div class="pricing_block">
-            <div class="block_summary">Basic</div>
-            <div class="price">$70</div>
-            <div class="payment">Free for Life</div>
+            <div class="block_summary">Премиум</div>
+            <div class="price">80р.</div>
+            <div class="payment">В месяц</div>
             <div class="foot_line"></div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
@@ -183,6 +212,8 @@
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
             <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
           </div>
         </div>
       </div>
@@ -232,7 +263,7 @@
     </footer>
     <script src="./script/smooth_scroll.js"></script>
     <script src="./script/sign_up_modal.js"></script>
-    <!-- <script src="./script/registration.js"></script> -->
+    <script src="./script/carousel.js"></script>
 </body>
 
 </html>

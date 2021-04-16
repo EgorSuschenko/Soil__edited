@@ -28,11 +28,30 @@
 }
 
 .example_wrapper{
+    overflow: hidden;
+    width: 650px;
+    height: 350px;
     margin-top: 15px;
     display: flex; 
     justify-content: center;  
 }
 
+.carousel{
+    display: flex;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+}
+
+.prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
 .partner_block{
     padding: 40px 25px;
     border: 1px solid rgb(236, 231, 231);
