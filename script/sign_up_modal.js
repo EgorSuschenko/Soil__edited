@@ -1,4 +1,3 @@
-const corousel = document.querySelector("")
 const signForm = document.getElementById("input_container_sign")
 const regForm = document.getElementById("input_container_reg")
 const regBtnForm = document.getElementById("form_reg_submit")
@@ -10,6 +9,7 @@ const spanReg = document.getElementsByClassName("close_btn")[0];
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
+
 btn.onclick = function() {
   modal.style.display = "block";
   document.querySelector("body").style.overflow = "hidden" 
