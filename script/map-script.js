@@ -9,6 +9,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
   this.points = []
   this.markers = [];
   this.fields = localStorage.getItem('fields') ? JSON.parse(localStorage.getItem('fields')) : [];
+  this.figures = [];
 
 
   var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
@@ -25,6 +26,19 @@ navigator.geolocation.getCurrentPosition(function(location) {
       accessToken: 'pk.eyJ1Ijoic25vd2JybyIsImEiOiJja21hZ24xMTcxcjZuMnBueHdvZGNqZGd4In0.1ca-njocUszsjgM28V3ujw',
       renderer: L.svg(),
   }).addTo(map);
+
+  if(this.fields) {
+    this.fields.forEach((field) => {
+      let figure = new L.Polyline(field.points, {
+        color: 'yellow',
+        weight: 5,
+        opacity: 0.8,
+        smoothFactor: 1
+      })
+      figure.addTo(map)
+      this.figures.push(figure)
+    });
+  }
 
 
   const addFieldBtnAdd = document.querySelector('.field__btn__add');
@@ -58,6 +72,8 @@ navigator.geolocation.getCurrentPosition(function(location) {
       this.points.push(this.points[0]);
       this.figure.remove(map);
 
+      this.fields.push({points, index: this.fields.length});
+
       this.figure = new L.Polyline(this.points, {
         color: 'yellow',
         weight: 5,
@@ -65,6 +81,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
         smoothFactor: 1
       });
       this.figure.addTo(map);
+      this.figures.push(figure);
 
       this.markers[this.markers.length - 1].remove(map);
       this.markers.pop();
@@ -77,7 +94,6 @@ navigator.geolocation.getCurrentPosition(function(location) {
       }));
       markers[this.markers.length - 1].addTo(map)
 
-      this.fields.push(figure);
       this.figure = new L.Polyline([], {
         color: 'yellow',
         weight: 5,
@@ -98,7 +114,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
   let saveField = (e) => {
     console.log(this.fields);
 
-    // localStorage.setItem('fields', JSON.stringify(this.fields))
+    localStorage.setItem('fields', JSON.stringify(this.fields))
 
     map.off('click', handleMapClick);
     document.querySelector('.map').style.cursor = ''
@@ -109,7 +125,9 @@ navigator.geolocation.getCurrentPosition(function(location) {
     console.log(this.fields);
     // this.fields[e.target.id].remove(map);
     // this.fields.filter((field, index) => index != e.target.id)
-    this.fields.pop().remove(map);
+    this.figures.pop().remove(map);
+    this.fields.pop();
+    localStorage.setItem('fields', JSON.stringify(this.fields));
   }
 
 
