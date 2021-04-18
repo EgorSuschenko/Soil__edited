@@ -13,3 +13,10 @@
 ul{
   list-style: none;
 }
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow{
+  margin: -0.5rem;
+  cursor: crosshair;
+
+}

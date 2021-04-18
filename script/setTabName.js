@@ -21,6 +21,10 @@ const form = `
   </form>
 `;
 
+const btnAddField = `
+  <button class="field__btn">Нарисовать поле</button>
+`;
+
 let setName = (title) => {
   tabWindow.innerHTML = '';
 
@@ -33,6 +37,9 @@ let setName = (title) => {
   if(title === 'Заметки'){
     tabWindow.innerHTML = form;
     tabWindow.querySelector('form').addEventListener('submit', addNote);
+  }
+  if(title === 'Поля') {
+    tabWindow.innerHTML = btnAddField;
   }
 }
 
