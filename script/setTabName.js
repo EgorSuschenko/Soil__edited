@@ -38,9 +38,9 @@ let setName = (title) => {
     tabWindow.innerHTML = form;
     tabWindow.querySelector('form').addEventListener('submit', addNote);
   }
-  if(title === 'Поля') {
-    tabWindow.innerHTML = btnAddField;
-  }
+  // if(title === 'Поля') {
+  //   tabWindow.innerHTML = btnAddField;
+  // }
 }
 
 let closeTab = (e) => {
