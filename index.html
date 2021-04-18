@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/sign_up_modal.css">
     <link rel="stylesheet" href="./styles/pricing.css">
+    <link rel="stylesheet" href="./styles/registration.css">
 </head>
 <body id="home" > 
     <header  class="header_wrapper">
@@ -24,29 +25,57 @@
             <ul class="header_link_wrapper">
                 <li class="nav_link"><a href="#home" class="nav_link">На Главную</a></li>
                 <li class="nav_link"><a href="#about_title" class="nav_link">О Нас</a></li>
-                <li class="nav_link"><a href="#partners" class="nav_link">Партнеры</a></li>
                 <li class="nav_link"><a href="#work_interface" class="nav_link">Превью</a></li>
+                <li class="nav_link"><a href="#partners" class="nav_link">Партнеры</a></li>
+                <li class="nav_link"><a href="#pricing_panel" class="nav_link">Цены</a></li>
                 <li class="nav_link"><a href="#contacts" class="nav_link">Контакты</a></li>
                 <li><a href="#" id="myBtn" class="nav_link">Войти/Регистрация</a></li>
             </ul>
         </nav>
     </header>
     <section class="logo_background">
-            <!--modal window-->
+            <!--modal window for log in-->
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                    <div class="close_container">
-                        <span class="close">&times;</span>
+                    <div class="close_wrapper">
+                        <div class="close_container_sign">
+                            <h2 class="enter">Вход</h2>                      
+                            <span class="close">&times;</span>
+                        </div>
                     </div>
-                  <input type="text" class="modal_input" placeholder="Введите свой логин">
-                  <input type="text" class="modal_input" placeholder="Введите свой пароль">
-                  <div class="submit_container">
-                    <button class="submit">Войти</button>
-                    <a href="" class="registration">Регистрация</a>
-                  </div>
+                    <form class="input_container" id="input_container_sign">
+                        <input type="text" class="modal_input" placeholder="Введите свой логин"  required>
+                        <input type="password" class="modal_input" placeholder="Введите свой пароль"  required>
+                        <div class="submit_wrapper">
+                            <button id="form_sign_submit" class="submit" type="submit">Войти</button>
+                            <a href="#" id="registration" class="registration_link">Регистрация</a>  
+                        </div>                 
+                    </form>
                 </div>
               </div>
-              <!--modal window-->
+              <!--modal window for log in-->
+
+              <!--Modal window for registration-->
+              <div id="regModal" class="reg_modal">
+                <div class="reg_modal-content">
+                    <div class="close_wrapper">
+                        <div class="close_container">
+                            <h2 class="enter">Регистрация</h2>                      
+                            <span class="close_btn">&times;</span>
+                        </div>
+                    </div>
+                    <form class="input_container" id="input_container_reg">
+                        <input type="text" class="modal_input" placeholder="Введите Ваше Имя" required pattern="">
+                        <input type="email" class="modal_input" placeholder="Введите email"  required>
+                        <input type="password" class="modal_input" placeholder="Введите пароль"  required>
+                        <input type="password" class="modal_input" placeholder="Повторите пароль"  required>
+                        <div class="submit_wrapper">
+                            <button id="form_reg_submit" class="submit" type="submit">Зарегестрироваться</button>
+                        </div>                 
+                    </form>
+                </div>
+              </div>
+              <!--Modal window for registration-->
             <h1>Lorem, ipsum dolor.</h1>
             <p>Lorem ipsum dolor sit amet.</p>
             <a href="#about_title" class="scroll_link">scroll down</a>
@@ -92,68 +121,101 @@
             <h3>Наши Партнеры</h3>
             <div class="example_line"></div>
         </div>
-        <div class="example_wrapper">
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+        <div class="carousel">
+            <button class="arrow prev">⇦</button>
+            <div class="gallery">
+                <ul class="example_wrapper">
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>
+                    <li class="partner_block"><img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
+                        <h2>ВГУ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nisi unde reiciendis obcaecati id quos iste autem ipsum atque.</p>
+                    </li>  
+                </ul>
             </div>
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus facilis itaque! Libero dignissimos hic nemo voluptas sit dolorem architecto.</p>
-            </div>
-            <div class="partner_block">
-                <img src="./assets/images/эмблема ВГУ.jpg" alt="emblem" class="partner_logo">
-                <h2>ВГУ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores esse odit laboriosam similique ipsum quisquam officiis quidem, iusto provident suscipit!</p>
-            </div>
-        </div>
+            <button class="arrow next">⇨</button>
+        </div>  
     </section>
     <div id="pricing_panel" class="pricing_panel">
         <div class="pricing_panel_head">
-          <h2 class="pricing_panel_summary">PRICING OPTIONS</h2>
+          <h2 class="pricing_panel_summary">Цена на Подписку</h2>
           <div class="pricing_line"></div>
           <div class="pricing_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Пример текст описания...
           </div>
         </div>
         <div class="pricing_content">
           <div class="pricing_block">
-            <div class="block_summary">Basic</div>
-            <div class="price">$0</div>
-            <div class="payment">Free for Life</div>
+            <div class="block_summary">Базовая</div>
+            <div class="price">10р.</div>
+            <div class="payment">В месяц</div>
             <div class="foot_line"></div>
-            <div class="block_text">1 GB OF SPACE</div>
-            <div class="block_text">10 GB OF BANDWIDTH</div>
-            <div class="block_text">3 WEBSITES</div>
-            <div class="block_text">BASIC CUSTOMIZATION</div>
-            <div class="block_text">WORDPRESS INTEGRATION</div>
-            <div class="block_text">EMAIL SUPPORT</div>
-          </div>
-          <div class="pricing_block2">
-            <div class="block_summary">Basic</div>
-            <div class="price">$19</div>
-            <div class="payment">Free for Life</div>
-            <div class="foot_line2">OUR MOST POPULAR</div>
-            <div class="block_text">5 GB OF SPACE</div>
-            <div class="block_text">50 GB OF BANDWIDTH</div>
-            <div class="block_text">12 WEBSITES</div>
-            <div class="block_text">BASIC CUSTOMIZATION</div>
-            <div class="block_text">WORDPRESS INTEGRATION</div>
-            <div class="block_text">EMAIL SUPPORT</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
           </div>
           <div class="pricing_block">
-            <div class="block_summary">Basic</div>
-            <div class="price">$70</div>
-            <div class="payment">Free for Life</div>
+            <div class="block_summary">Расширенная</div>
+            <div class="price">30р.</div>
+            <div class="payment">В месяц</div>
             <div class="foot_line"></div>
-            <div class="block_text">UNLIMITED SPACE</div>
-            <div class="block_text">UNLIMITED BANDWIDTH</div>
-            <div class="block_text">3 WEBSITES</div>
-            <div class="block_text">BASIC CUSTOMIZATION</div>
-            <div class="block_text">WORDPRESS INTEGRATION</div>
-            <div class="block_text">EMAIL SUPPORT</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
+          </div>
+          <div class="pricing_block">
+            <div class="block_summary">Премиум</div>
+            <div class="price">80р.</div>
+            <div class="payment">В месяц</div>
+            <div class="foot_line"></div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <div class="block_text">Текст Описания</div>
+            <br>
+            <button class="block_text">Опробовать</button>
           </div>
         </div>
       </div>
@@ -185,7 +247,7 @@
                     <li><a href="#partners" class="footer_link">Партнеры</a></li>
                     <li><a href="#" class="footer_link">News</a></li>
                 </ul>
-            </div>
+            </div> 
         </div>
         <div class="contact_us_info">
             <h2></h2>
@@ -201,8 +263,9 @@
             </ul>
         </div>
     </footer>
-    <script src="./script/main.js"></script>
+    <script src="./script/smooth_scroll.js"></script>
     <script src="./script/sign_up_modal.js"></script>
+    <script src="./script/carousel.js"></script>
 </body>
 
 </html>

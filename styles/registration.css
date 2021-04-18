@@ -1,5 +1,4 @@
-/* The Modal (background) */
-.modal {
+.reg_modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -7,14 +6,14 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    /*overflow: auto;*/ /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
-  .modal-content {
-    margin: 10% auto; /* 15% from the top and centered */
+  .reg_modal-content {
+    margin: 8% auto; /* 15% from the top and centered */
     width: 500px; /* Could be more or less, depending on screen size */
     height: 400px;
   }
@@ -47,26 +46,26 @@
     padding: 15px 7px;
   }
 
-  .close_container_sign{
+  .close_container{
     display: flex;
   }
 
-  .close {
+  .close_btn {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
   }
 
-  .close:hover,
-  .close:focus {
+  .close_btn:hover,
+  .close_btn:focus {
     color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
   }
 
-  .close_container_sign h2{
+  .close_container h2{
     text-align: center;
-    margin: auto 43%;
+    margin: auto 36%;
     font-family: "Open Sans", serif;
     font-style: normal;
     font-weight: 600;
@@ -125,7 +124,3 @@
   .registration_link:hover{
     color: #e5d600;
   }
-
-  
-  
-  
