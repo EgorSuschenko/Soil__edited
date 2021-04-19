@@ -83,12 +83,14 @@
 .note__title{
   font-size: 1.6rem;
   padding: 1rem 2rem;
+  word-break: break-all;
 }
 
 .delete__btn{
   position: relative;
   top: -3.5rem;
   right: -20rem;
+  transition: none;
 }
 
 .field__btn__add,

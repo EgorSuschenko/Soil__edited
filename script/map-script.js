@@ -13,7 +13,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
 
   var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
-  const eps = 0.001;
+  const eps = 0.0001;
 
   var map = L.map('map').setView(latlng, 13);
 

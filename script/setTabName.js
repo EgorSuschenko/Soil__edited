@@ -25,7 +25,8 @@ let addNote = (e) => {
   btn.addEventListener('click', deleteNote)
   console.log(div);
   tabWindow.appendChild(div);
-  this.notes.push(JSON.stringify(div));
+  // this.notes.push(JSON.stringify(div));
+  btn.style.top = `${-div.offsetHeight+15}px`
   input.value = '';
 }
 
