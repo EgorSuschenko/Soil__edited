@@ -1,5 +1,5 @@
 .work_interface{
-    padding: 70px 250px;
+    padding: 70px 265px;
     background-color: rgb(241, 239, 224);
 }
    
@@ -30,12 +30,13 @@
 }
 
 .interface_description{
-   min-width: 300px;
+    list-style: disc;
+    min-width: 300px;
     margin-right: 15px;
     font-family: "Open Sans";
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 15px;
     line-height: 23px;
     letter-spacing: 0.1875px;
     color: #48555B;
@@ -58,5 +59,5 @@
 }
 
 .interface_example{
-    max-width: 750px;
+    max-width: 800px;
 }

@@ -48,9 +48,9 @@
 }
 
 .arrow{
-  width: 25px;
-  height: 25px;
-  font-size: 35px;
+  width: 30px;
+  height: 30px;
+  /* font-size: 35px; */
   background: transparent;
   border: none;
 }
