@@ -123,7 +123,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
   let deleteField = (e) => {
     console.log(this.fields);
-    // this.fields[e.target.id].remove(map);
+    // this.fields[e.target.id].remove(map);                        remove field figure by id
     // this.fields.filter((field, index) => index != e.target.id)
     this.figures.pop().remove(map);
     this.fields.pop();
