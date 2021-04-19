@@ -6,7 +6,7 @@
 
 .example_title h3{
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -97,7 +97,7 @@
 }
 
 .partner_block p{
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
