@@ -30,6 +30,7 @@
 }
 
 .interface_description{
+   min-width: 300px;
     margin-right: 15px;
     font-family: "Open Sans";
     font-style: normal;
@@ -57,5 +58,5 @@
 }
 
 .interface_example{
-    width: 900px;
+    max-width: 750px;
 }
