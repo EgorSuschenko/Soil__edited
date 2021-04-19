@@ -108,3 +108,7 @@
 .field__btn__delete {
   height: 8rem;
 }
+
+.display__none{
+  display: none;
+}
