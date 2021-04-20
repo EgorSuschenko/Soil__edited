@@ -10,6 +10,8 @@ const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
 
+
+
 btn.onclick = function() {
   modal.style.display = "block";
   document.querySelector("body").style.overflow = "hidden" 
@@ -47,8 +49,25 @@ regForm.onsubmit = (event) =>{
   document.location.href = "./dist/work-tab.html"
 }
 
-//  window.onclick = (event) => {
-//   if (event.target == modalReg) {
-//     modalReg.style.display = "none";
-//   }
-//  }
+
+const tryBtn = document.getElementById("try_button")
+
+// tryBtn.onclick = function() {
+//   modalReg.style.display = "block";
+//   document.querySelector("body").style.overflow = "hidden" ;
+// }
+const tryPlan = document.getElementById("pricing_content");
+
+// let selectedBtn;
+
+tryPlan.onclick = function (event) {
+  let target = event.target;
+  console.log(target.tagName)
+  if (target.tagName != 'BUTTON') return;
+  delClick(target)
+};
+
+function delClick (button){
+    modalReg.style.display = "block";
+    document.querySelector("body").style.overflow = "hidden"
+}
