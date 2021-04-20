@@ -45,7 +45,7 @@ signForm.onsubmit = (event) =>{
 regForm.onsubmit = (event) =>{
   event.preventDefault();
   document.location.href = "./dist/work-tab.html"
- }
+}
 
 //  window.onclick = (event) => {
 //   if (event.target == modalReg) {
