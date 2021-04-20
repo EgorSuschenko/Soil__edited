@@ -1,16 +1,32 @@
 let menuOptions = Array.from(document.querySelectorAll('.navigation__item'));
 const tabWindow = document.querySelector('.tab__window')
 
+let deleteNote = (e) => {
+  console.log(e.target.parentNode);
+  e.target.parentNode.remove();
+}
+
 
 let addNote = (e) => {
+
+
   e.preventDefault();
   let input = e.target.querySelector('input')
   console.log(input.value);
   let div = document.createElement('div');
+  let btn = document.createElement('button');
+  btn.classList.add('delete__btn', 'back__btn')
+  btn.innerHTML = '&times';
   div.classList.add(`note`, `${1}`);
-  div.innerHTML = `<p class="note__title"> ${input.value}</p>`;
+  div.innerHTML = `
+    <p class="note__title"> ${input.value}</p>
+  `
+  div.append(btn);
+  btn.addEventListener('click', deleteNote)
   console.log(div);
   tabWindow.appendChild(div);
+  // this.notes.push(JSON.stringify(div));
+  btn.style.top = `${-div.offsetHeight+15}px`
   input.value = '';
 }
 
@@ -21,7 +37,13 @@ const form = `
   </form>
 `;
 
+// const btnAddField = `
+//   <button class="field__btn">Нарисовать поле</button>
+// `;
+
 let setName = (title) => {
+  this.notes = [];
+
   tabWindow.innerHTML = '';
 
   document.querySelector('.back__btn').classList.remove('back__btn-closed')
@@ -34,6 +56,9 @@ let setName = (title) => {
     tabWindow.innerHTML = form;
     tabWindow.querySelector('form').addEventListener('submit', addNote);
   }
+  // if(title === 'Поля') {
+  //   tabWindow.innerHTML = btnAddField;
+  // }
 }
 
 let closeTab = (e) => {
