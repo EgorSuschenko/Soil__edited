@@ -1,5 +1,5 @@
 .header_wrapper{
-    
+
     top: 0;  
 }
 .header{
@@ -20,18 +20,18 @@
 }
 
 .logo_background h1{
-    margin-top: 380px;
+    margin-top: 260px;
     margin-bottom: 0;
     text-align: center;
-    font-family: "Open Sans";
-    font-size: 60px;
+    font-family: "Open Sans" ,serif;
+    font-size: 40px;
     line-height: 70px;
     letter-spacing: 5px;
     color: #FFFFFF;
 }
 
 .logo_background p{
-    margin: 0;
+    margin-top: 20px;
     text-align: center;
     font-family: "Open Sans", serif;
     font-style: normal;
@@ -43,11 +43,11 @@
 
 .scroll_link{
     text-align: center;
-    margin-top: 220px;
+    margin-top: 320px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 15px;
     letter-spacing: 3.7px;
     color: #FFFFFF;
@@ -68,7 +68,7 @@
 }
 
 .nav_link{
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
