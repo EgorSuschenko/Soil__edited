@@ -8,6 +8,7 @@
     margin-top: 20px;
 }
 
+
 .title_wrapper{
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@
 
 .description_text h3{
     margin: 0;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -69,7 +70,6 @@
 
 .tile{
     font-family: "Open Sans";
-    background-image: url(../assets/images/tile_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -78,7 +78,7 @@
     height: 225px;
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
     letter-spacing: 0.1875px;
     color: #FFFFFF;

@@ -6,7 +6,7 @@
 
 .example_title h3{
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -44,25 +44,38 @@
 .carousel{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .arrow{
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  /* font-size: 35px; */
+  background: transparent;
+  border: none;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow:focus{
+    outline: none;
 }
 
 .prev {
     left: 7px;
+    margin-right: 15px;
+    
   }
 
 .next {
+    margin-left: 15px;
     right: 7px;
 }
 
 .partner_block{
     padding: 40px 25px;
-    border: 1px solid rgb(236, 231, 231);
     width: 270px;
     height: 300px;
     margin: 0 30px;
@@ -84,7 +97,7 @@
 }
 
 .partner_block p{
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -92,3 +105,4 @@
     letter-spacing: 0.1875px;
     color: #48555B;
 }
+

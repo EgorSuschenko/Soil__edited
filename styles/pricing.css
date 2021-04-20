@@ -72,6 +72,7 @@
     background: rgb(2, 27, 12);
     color: #FFFFFF;
 }
+
 .price{
     display: flex;
     align-items: center;
@@ -87,6 +88,7 @@
     border-top: 1px solid #FFFFFF;
     border-bottom:1px solid #FFFFFF; ;
 }
+
 .payment{
     display: flex;
     align-items: center;
@@ -100,6 +102,7 @@
     line-height: 24px;
     color: rgba(255, 255, 255, 0.7);
 }
+
 .foot_line{
     width: 343px;
     height: 5px;
@@ -122,4 +125,20 @@
 
 .block_text:not(:last-child){
     border-bottom: 1px solid rgb(235, 232, 232);
+}
+
+.try_button{
+    border: none;
+    height: 40px;
+    font-family: "Open Sans";
+    background-color: #fff;
+    color: #86878B;
+}
+
+.try_button:hover{
+    cursor: pointer;
+}
+
+.try_button:focus{
+    outline: none;
 }
